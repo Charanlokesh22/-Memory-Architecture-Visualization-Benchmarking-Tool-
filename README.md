@@ -23,5 +23,8 @@ Features
  https://github.com/Charanlokesh22/Memory-Architecture-Benchmarking-Tool.git
 
 2. Install dependencies:
-Edit `config.json` to set cache and memory parameters.
 - Run: - python main.py
+python -m venv venv
+source venv/bin/activate
+Windows: venv\Scripts\activate
+pip install -r requirements.txt
