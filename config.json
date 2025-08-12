@@ -1,0 +1,27 @@
+{
+  "memory": {
+    "dram_latency_ns": 100,
+    "sram_latency_ns": 10,
+    "flash_latency_ns": 500
+  },
+  "cache": {
+    "enabled": true,
+    "size_kb": 64,
+    "line_size_bytes": 64,
+    "associativity": 4,
+    "replacement_policy": "LRU"
+  },
+  "benchmark": {
+    "access_pattern": "mixed",
+    "working_set_kb": 1024,
+    "num_requests": 20000,
+    "num_threads": 4,
+    "read_ratio": 0.8,
+    "random_seed": 42
+  },
+  "output": {
+    "results_dir": "results",
+    "latency_plot": "results/latency_vs_throughput.png",
+    "hitmiss_plot": "results/hit_miss_rate.png"
+  }
+}
